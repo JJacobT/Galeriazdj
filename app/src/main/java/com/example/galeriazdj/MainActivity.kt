@@ -25,6 +25,21 @@ class MainActivity : AppCompatActivity() {
                 findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.kotek);
 
         }
+        findViewById<Button>(R.id.butn_dal).setOnClickListener {
+            if (obraz == 4)
+                obraz = 1 ;
+            else
+                obraz += 1 ;
+            if(obraz  == 1)
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.domek);
+            else if(obraz == 2 )
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.auto);
+            else if(obraz == 3 )
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.piesek);
+            else if(obraz == 4 )
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.kotek);
+        }
+
 
 
 
